@@ -1,12 +1,20 @@
 # Monorepo-lerna-project
 
-### Details have mentioned below these instructions
-
-# Getting Started with Create React App
-
 ## Available Scripts
 
+# Started this project using monorepo
+
+There are 2 different projects in a single monorepo. We can use `common` repo's components in `frontend` repo. However frontend is the entry point of React DOM ,so frontend can access and render all other repo's components. But `frontend's` components can't be access by other repo's, still other repos can access all other repos.
+
 In the project directory, you can run:
+
+### `yarn install`
+
+Install all the packages available in root folder's `package.json` including packages which are available in different repos's `package.json` file.
+
+### `cd ./frontend`
+
+You will reach the project directory which is the entry point of of our React App.
 
 ### `yarn run start`
 
@@ -15,6 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
 
 ### `yarn run test`
 
@@ -43,10 +52,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 
-# Started this project using monorepo
-
-There are 2 different projects in a single monorepo. We can use `common` repo's components in `frontend` repo. However frontend is the entry point of React DOM ,so frontend can access and render all other repo's components. But `frontend's` components can't be access by other repo's, still other repos can access all other repos.
-
-
 ## Till now we used monorepo without `Lerna`.
-
