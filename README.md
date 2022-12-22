@@ -48,4 +48,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 There are 2 different projects in a single monorepo. We can use `common` repo's components in `frontend` repo. However frontend is the entry point of React DOM ,so frontend can access and render all other repo's components. But `frontend's` components can't be access by other repo's, still other repos can access all other repos.
 
 
+## Till now we used monorepo without `Lerna`.
 
