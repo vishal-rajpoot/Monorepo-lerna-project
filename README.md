@@ -1,6 +1,6 @@
-################################# Monorepo-lerna-project #######################################
+# Monorepo-lerna-project
 
-<<<<<<<<<<<<<<<-------------------------------------Details have mentioned below these instructions-------------------------------------->>>>>>>>>>>>>>
+### Details have mentioned below these instructions
 
 # Getting Started with Create React App
 
@@ -43,10 +43,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 
-#############################################################
+# Started this project using monorepo
 
-
-Started this project using monorepo
+There are 2 different projects in a single monorepo. We can use `common` repo components in `frontend` repo also 
 
 
 
