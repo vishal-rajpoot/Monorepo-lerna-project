@@ -13,7 +13,7 @@ In the project directory, you can run:
 Install all the packages available in root folder's `package.json` including packages which are available in different repos's `package.json` file.
 
 
-### `yarn start` || `yarn woskpace [repo name] start`
+### `yarn start` || `yarn woskpace [woskapce name] [command name]`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -21,10 +21,27 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `yarn workspaces run [command name]`
+
+If we want to run a particular command in every repos then this will work.
+
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+**Note: `--watchAll=false --passWithNoTest` is mentioned in all repo's `package.json Scripts` which means watch mode will be false and if there are no test cases then still it should pass the test cases.
+  1. Watch mode here is menu prompts that execute code on key press.
+  2. If there are no test cases, it will break.
+
+### `yarn workspaces info`
+
+It shows the list of repo's dependencies which are dependent on each other.
+
+### `yarn why [package-name]`
+
+This will show us the reasons, why that particular package is here.
 
 ### `yarn run build`
 
@@ -46,8 +63,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Note: `--watchAll=false --passWithNoTest` is mentioned in all repo's `package.json Scripts` which means watch mode will be false and if there are no test cases then still it should pass the test cases.
-  1. Watch mode here is menu prompts that execute code on key press.
-  2. If there are no test cases, it will break.
 
 ## Till now we used monorepo without `Lerna`.
