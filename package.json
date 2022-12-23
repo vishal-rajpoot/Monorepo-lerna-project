@@ -1,12 +1,17 @@
 {
+    "name": "root",
     "private": true,
     "workspaces": {
-        "packages": ["./common", "./frontend"]
+        "packages": [
+            "./common",
+            "./frontend"
+        ]
     },
     "scripts": {
-        "start": "yarn workspace frontend start",
-        "test": "yarn workspaces run test"
-    }
-} 
-
-
+        "start": "lerna run --scope=frontend start --stream",
+        "test": "lerna run test" 
+    },
+  "devDependencies": {
+    "lerna": "^6.1.0"
+  }
+}

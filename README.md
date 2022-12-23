@@ -68,4 +68,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 # Started this project using Lerna
 
-
+We have to just replace workspaces command with lerna in `package.json` root only
