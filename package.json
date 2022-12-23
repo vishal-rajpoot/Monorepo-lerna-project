@@ -2,5 +2,11 @@
     "private": true,
     "workspaces": {
         "packages": ["./common", "./frontend"]
+    },
+    "scripts": {
+        "start": "yarn workspace frontend start",
+        "test": "yarn workspaces run test"
     }
-}
+} 
+
+

@@ -8,13 +8,11 @@ import Hello from './Hello';
 const text = 'Button componnent by Entry Point'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  <>
+  <React.StrictMode>
     <App />
     <Button text={text}/>
     <Hello />
-  </>
-  // </React.StrictMode> 
+  </React.StrictMode> 
 );
 
 // If you want to start measuring performance in your app, pass a function
